@@ -8,7 +8,7 @@ async function getUsers(req, res) {
   try {
     const role = req.query.role;
 
-    let query = `SELECT users.id, users.username, users.email,users.username, users.role, profiles.first_name,  profiles.last_name, profiles.state
+    let query = `SELECT users.id, users.username, users.email, users.username, users.role, profiles.first_name, profiles.last_name, profiles.state
                  FROM users
                  JOIN profiles ON users.profileid = profiles.id`;
 

@@ -9,3 +9,5 @@ services:
       - POSTGRES_PASSWORD=root
       - POSTGRES_USER=admin
     image: postgres:15.2-alpine
+    volumes: 
+      -  db_users:/var/lib/postgresql/data
